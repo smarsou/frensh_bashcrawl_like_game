@@ -54,8 +54,10 @@ La taverne est remplie de Minks qui festoient !
 
 📦 Un fichier nourriture.txt contient tes provisions !
 💡 Déplace-le dans ton inventaire avec la commande mv.
-(Astuce: dans la commande mv expliqué dans le GUIDE, ici la destination est '../../../../inventaire/')
-💡 Ensuite, explore la forêt pour rencontrer un allié important !
+Rappel: la commande 'mv fichier.txt destination/' permet de déplacer un fichier
+Astuce: ici la destination/ est ../../../../inventaire/
+
+💡💡💡 Ensuite, explore la forêt pour rencontrer un allié important ! 💡💡💡
 EOF
 
 # Créer les provisions
@@ -201,7 +203,7 @@ case $gear in
     echo ""
     echo "💡 Essaie de modifier le script combat.sh et utilise le Gear le plus puissant ! (indice: gear entre 1 et 5)"
     echo "💡 Astuce : Utilise la commande nano pour modifier le script."
-    echo "💡 Astuce : Avec la commande nano, pour sauvegarder il faut suivre les étapes indiquées : CTRL+X, puis taper la touche Y, puis Entrée."
+    echo "💡 Astuce : Avec la commande nano, pour sauvegarder et quitter il faut suivre les étapes : CTRL+S puis CTRL+X"
     ;;
   5)
     echo ""
@@ -319,7 +321,7 @@ case $gear in
     echo "🎊 🎉 VICTOIRE ! 🎉 🎊"
     echo ""
     echo "🏆 FÉLICITATIONS ! TU AS VAINCU KAIDO ! 🏆"
-    cp ../../../../modele_iles/certificat_reussite.txt .
+    cp ../../../../modele_iles/certificat_reussite.txt ../../../inventaire/.
     echo "Un certificat de réussite à été ajouté à ton inventaire !"
     ;;
   *)
@@ -366,15 +368,13 @@ cat > ../modele_iles/certificat_reussite.txt << 'EOF'
 ║  🏝️ Exploration de l'île de Zou                      ║
 ║  🍖 Récupération des provisions                      ║
 ║  🗣️ Communication avec les Minks                     ║
-║  🏯 Traversée du labyrinthe d'Onigashima             ║
+║  🏯 Onigashima             ║
 ║  🐉 Défaite de Kaido avec le Gear 5                  ║
 ║  💻 Maîtrise des scripts bash                        ║
 ║                                                      ║
 ║         👑 FUTUR ROI DES PIRATES 👑                 ║
 ║                                                      ║
 ║  Date : XX/XX/XXXX                                   ║
-║                                                      ║
-║       "L'aventure continue !" - Luffy                ║
 ║                                                      ║
 ╚══════════════════════════════════════════════════════╝
 
